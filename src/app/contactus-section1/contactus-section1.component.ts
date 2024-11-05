@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./contactus-section1.component.css']
 })
 export class ContactusSection1Component {
-
+imagePath = 'assets/contactImg.png'
 }
