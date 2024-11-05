@@ -1,0 +1,47 @@
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4" *ngFor="let plan of data">
+      <div class="card">
+        <div id="" class="card-body">
+          <h5 id="top" class="card-title">{{ plan.name }}</h5>
+          <hr />
+          <h6 id="centre" class="card-subtitle mb-2 text-muted">
+            {{ plan.people }}
+          </h6>
+          <hr />
+          <p id="centre" class="card-text">{{ plan.price }}</p>
+          <hr />
+          <p id="centre" class="card-text">{{ plan.info }}</p>
+          <hr />
+          <div id="centre" class="container">
+            <h2>
+              <button id="btn" type="button" class="btn btn-secondary">
+                Get Subscription
+              </button>
+            </h2>
+          </div>
+
+          <hr />
+
+          <div id="data">
+            <p id="data-centre" class="card-text">
+              <i class="fa-regular fa-circle-check"></i> {{ plan.i1 }}
+            </p>
+            <p id="data-centre" class="card-text">
+              <i class="fa-regular fa-circle-check"></i>{{ plan.i2 }}
+            </p>
+            <p id="data-centre" class="card-text">
+              <i class="fa-regular fa-circle-check"></i>{{ plan.i3 }}
+            </p>
+            <p id="data-centre" class="card-text">
+              <i class="fa-regular fa-circle-check"></i>{{ plan.i4 }}
+            </p>
+            <p id="data-centre" class="card-text">
+              <i class="fa-regular fa-circle-check"></i>{{ plan.i5 }}
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

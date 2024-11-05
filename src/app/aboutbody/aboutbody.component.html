@@ -1,0 +1,27 @@
+<div style="border: 2px solid black" class="container">
+  <h1>{{ title }}</h1>
+  <div class="row">
+    <div class="col-12" *ngFor="let employee of employees">
+      <div class="row">
+        <div class="col-sm-2 text-primary">
+          Emp Code: {{ employee.empCode }}
+        </div>
+        <div class="col-sm-2 text-danger">Name: {{ employee.name }}</div>
+        <div class="col-sm-2 text-success">Age: {{ employee.age }}</div>
+        <div class="col-sm-2 text-warning">
+          Designation: {{ employee.designation }}
+        </div>
+        <div class="col-sm-2 text-danger">Country: {{ employee.country }}</div>
+      </div>
+      <hr />
+      
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+

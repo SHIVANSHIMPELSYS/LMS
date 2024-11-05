@@ -1,0 +1,44 @@
+#section-heading {
+  color: rgb(255, 115, 0);
+  font-family: "Platypi", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  margin-bottom: 2%;
+  font-style: normal;
+  margin-bottom: 2%;
+  font-size: xx-large;
+  
+}
+#link {
+  text-decoration: none;
+  color: rgb(10, 10, 9);
+  font-family: "Times New Roman", Times, serif;
+  margin-bottom: 0.5%;
+  display: flex;
+  justify-content: center;
+}
+
+.row {
+  box-shadow: 1px 1px 20px 1px rgba(2, 33, 78, 0.192);
+  padding: 2%;
+}
+
+@media (max-width: 575px) {
+  #section2 .row {
+    flex-direction: column;
+    overflow-y: auto;
+    max-height: 300px;
+    padding: 1px;
+    background-color: rgba(125, 180, 194, 0.11);
+  }
+  #section2 .col-sm-2 {
+    width: 50%;
+    margin: 10px 0;
+  }
+  #section2 .card {
+    margin-bottom: 10px;
+  }
+  .card-img-top {
+    height: 20vh;
+  }
+}

@@ -1,0 +1,23 @@
+<div class="container">
+  <h2 id="section-heading">Must Watch Courses!</h2>
+  <div class="row">
+    <div class="col-sm-3" *ngFor="let course of courses">
+      <div class="card" id="card1">
+        <a [routerLink]="course.link">
+          <img
+            [src]="course.image"
+            class="card-img-top"
+            alt="{{ course.name }}"
+          />
+        </a>
+        <div class="card-body">
+          <h4>
+            <a id="link" class="prata-regular" [routerLink]="course.link">{{
+              course.name
+            }}</a>
+          </h4>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,61 @@
+<hr>
+<div class="container">
+  <div class="row">
+    <div id="first-half" class="col-sm-4">
+      <h1 id="montaga-regular">User Login</h1>
+      <form #f="ngForm" novalidate (ngSubmit)="onSubmit(f)">
+        <!-- Email -->
+        <div class="form-group">
+          <label id="montaga-regular1"  for="email">Email:</label>
+          <input id="montaga-regular1"
+            type="email"
+            name="email"
+            [(ngModel)]="user.email"
+            #email="ngModel"
+            required
+            class="form-control"
+          />
+          <small  [hidden]="email.valid || (email.pristine && !f.submitted)"
+            >Email is required and must be valid.</small
+          >
+        </div>
+
+        <!-- Password -->
+        <div class="form-group">
+          <label id="montaga-regular1"  for="password">Password:</label>
+         
+          <input id="montaga-regular1"
+            type="password"
+            name="password"
+            [(ngModel)]="user.password"
+            #password="ngModel"
+            required
+            minlength="8"
+            class="form-control"
+          />
+          <small 
+            [hidden]="password.valid || (password.pristine && !f.submitted)"
+            >Password is required (minimum 8 characters).</small
+          >
+        </div>
+
+        <button  class="btn btn-success" type="submit" [disabled]="f.invalid">
+          Login
+        </button>
+      </form>
+    </div>
+    <div id="second-half" class="col-sm-8">
+      <h2 id="section-heading">
+        Welcome Back to SkillWave: Ready to Continue Your Learning Journey?
+      </h2>
+      <h4 id="section-content">
+        SkillWave is a cutting-edge Learning Management System (LMS) designed to
+        revolutionize the way individuals and organizations approach education and
+        professional development. At its core, SkillWave is dedicated to
+        empowering learners with top-tier educational resources and training
+        programs that are both engaging and effective.
+      </h4>
+    </div>
+    
+  </div>
+</div>

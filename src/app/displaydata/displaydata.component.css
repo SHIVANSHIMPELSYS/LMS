@@ -1,0 +1,41 @@
+#icon {
+  color: rgba(12, 46, 66, 0.849);
+  display: flex;
+  justify-content: center;
+}
+#section-content {
+  font-family: "Times New Roman", Times, serif;
+  margin-bottom: 0.5%;
+  color: rgb(22, 67, 68);
+  display: flex;
+  justify-content: center;
+  font-size:large;
+}
+#section-heading {
+  color: rgb(255, 115, 0);
+  margin-top: 2%;
+  font-family: "Platypi", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  margin-bottom: 5%;
+  font-size:xx-large;
+}
+i{
+  color: rgb(255, 115, 0);
+}
+.col-sm-3 {
+  box-shadow: 1px 1px 20px 1px rgba(2, 32, 78, 0.171);
+  border-radius: 15px;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  width: 25%;
+  margin-left: 1%;
+  padding: 2%;
+}
+
+#data{
+  /* border: 5px solid  rgb(255, 115, 0); */
+  display: flex;
+  border-radius: 50px;
+}

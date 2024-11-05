@@ -1,0 +1,165 @@
+<hr />
+<div class="container">
+  <div class="row">
+    <div id="first-half" class="col-sm-6">
+      <br /><br />
+      <h1 id="montaga-regular">User Sign Up</h1>
+      <br />
+      <form #f="ngForm" novalidate (ngSubmit)="onSubmit(f)">
+        <div class="row">
+          <!-- First Name -->
+          <div class="col-sm-6">
+            <div class="form-group">
+              <label id="montaga-regular1" for="firstName">First Name:</label>
+              <input
+                id="montaga-regular1"
+                type="text"
+                name="firstName"
+                [(ngModel)]="user.firstName"
+                #firstName="ngModel"
+                required
+                class="form-control"
+              />
+              <small
+                [hidden]="
+                  firstName.valid || (firstName.pristine && !f.submitted)
+                "
+                >First Name is required.</small
+              >
+            </div>
+          </div>
+
+          <!-- Last Name -->
+          <div class="col-sm-6">
+            <div class="form-group">
+              <label id="montaga-regular1" for="lastName">Last Name:</label>
+              <input
+                id="montaga-regular1"
+                type="text"
+                name="lastName"
+                [(ngModel)]="user.lastName"
+                #lastName="ngModel"
+                required
+                class="form-control"
+              />
+              <small
+                [hidden]="lastName.valid || (lastName.pristine && !f.submitted)"
+                >Last Name is required.</small
+              >
+            </div>
+          </div>
+        </div>
+        <br /><br />
+        <!-- Email -->
+        <div class="form-group">
+          <label id="montaga-regular1" for="email">Email:</label>
+          <input
+            id="montaga-regular1"
+            type="email"
+            name="email"
+            [(ngModel)]="user.email"
+            #email="ngModel"
+            required
+            class="form-control"
+          />
+          <small [hidden]="email.valid || (email.pristine && !f.submitted)"
+            >Email is required and must be valid.</small
+          >
+        </div>
+        <br />
+        <!-- Gender -->
+        <div class="form-group">
+          <label id="montaga-regular1">Gender:</label>
+          <br />
+          <div>
+            <label class="radio-inline">
+              <br />
+              <input
+                type="radio"
+                name="gender"
+                value="male"
+                [(ngModel)]="user.gender"
+                required
+              />
+              Male </label
+            ><br />
+            <label class="radio-inline">
+              <input
+                type="radio"
+                name="gender"
+                value="female"
+                [(ngModel)]="user.gender"
+                required
+              />
+              Female
+            </label>
+            <br />
+            <label class="radio-inline">
+              <input
+                type="radio"
+                name="gender"
+                value="other"
+                [(ngModel)]="user.gender"
+                required
+              />
+              Other
+            </label>
+          </div>
+        </div>
+        <br />
+        <!-- Password -->
+        <div class="form-group">
+          <label id="montaga-regular1" for="password">Create Password:</label>
+          <input
+            id="montaga-regular1"
+            type="password"
+            name="password"
+            [(ngModel)]="user.password"
+            #password="ngModel"
+            required
+            minlength="8"
+            class="form-control"
+          />
+          <small
+            [hidden]="password.valid || (password.pristine && !f.submitted)"
+            >Password is required (minimum 8 characters).</small
+          >
+        </div>
+        <br />
+        <!-- Terms and Conditions -->
+        <div class="form-group form-check">
+          <input
+            type="checkbox"
+            class="form-check-input"
+            id="terms"
+            name="terms"
+            [(ngModel)]="user.terms"
+            required
+          />
+          <label class="form-check-label" for="terms"
+            >Click here to accept terms and conditions</label
+          >
+        </div>
+        <br />
+        <!-- Sign-Up Button -->
+        <button class="btn btn-success" type="submit" [disabled]="f.invalid">
+          Sign Up
+        </button>
+      </form>
+    </div>
+    <div id="second-half" class="col-sm-6">
+      <h2 id="section-heading">
+        Join SkillWave: Unlock Your Path to Excellence!
+      </h2>
+      <br /><br />
+      <h4 id="section-content">
+        SkillWave is dedicated to empowering individuals and organizations with
+        top-tier educational resources and training programs. Sign up today to
+        start your journey towards mastering today’s essential skills and
+        transforming your career!
+      </h4>
+      <br /><br />
+      <img src="../../assets/signup page for SkillWave.png" alt="" />
+    </div>
+  </div>
+</div>

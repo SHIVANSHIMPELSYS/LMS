@@ -1,0 +1,107 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #f0f0f0;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+h4,
+h5 {
+  font-family: "Montserrat", sans-serif;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-control {
+  border-radius: 50px;
+  padding: 10px 20px;
+  font-size: 1em;
+  transition: border-color 0.3s ease;
+}
+
+.form-control:focus {
+  border-color: #0056b3;
+  box-shadow: 0 0 10px rgba(0, 86, 179, 0.2);
+}
+
+.btn-success {
+  background-color: #007bff;
+  border: none;
+  border-radius: 50px;
+  padding: 10px 20px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-success:hover {
+  background-color: #0056b3;
+}
+
+small {
+  display: block;
+  margin-top: 5px;
+  color: #d9534f;
+  font-size: 0.875em;
+}
+#first-half {
+  /* box-shadow: 5px 5px 20px 5px rgba(2, 32, 78, 0.596); */
+  border: 5px solid rgba(12, 46, 66, 0.849);
+  padding: 2%;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+}
+#second-half {
+  /* box-shadow: 5px 5px 20px 5px rgba(2, 32, 78, 0.596); */
+  background-color: rgba(12, 46, 66, 0.849);
+  color: white;
+  padding: 2%;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+#section-heading {
+  color: rgb(255, 115, 0);
+  font-family: "Platypi", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  margin-bottom: 2%;
+  font-style: normal;
+  margin-bottom: 2%;
+  font-size: xx-large;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+#section-content {
+  font-family: "Times New Roman", Times, serif;
+  margin-bottom: 0.5%;
+  color: rgb(255, 255, 255);
+  font-size: large;
+}
+#montaga-regular {
+  font-family: "Cinzel", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  display: flex;
+  justify-content: center;
+  color: rgba(12, 46, 66, 0.849);
+  font-size: x-large;
+}
+#montaga-regular1 {
+  font-family: "Times New Roman", Times, serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+  color: rgba(12, 46, 66, 0.849);
+  font-size: large;
+}
+img {
+
+  width: 100%;
+}

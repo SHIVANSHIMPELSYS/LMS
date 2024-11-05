@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Montaga&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LVC</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="con">
+      <nav class="navbar navbar-expand-sm navbar-light ">
+        <div class="container-fluid">
+          <a class="navbar-brand" routerLink="home" data-bs-title="Go to Home">
+            <h3 id="font1"><i class="fas fa-gem me-3"></i>SkillWave</h3></a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item mx-4 dropdown">
+                <button id="nav-submenu" mat-button [matMenuTriggerFor]="animals">Products</button>
+                <mat-menu #animals="matMenu">
+                  <button mat-menu-item [matMenuTriggerFor]="vertebrates">Medical</button>
+                  <button mat-menu-item [matMenuTriggerFor]="invertebrates">Engineering </button>
+                  <a routerLink="allcourses" mat-menu-item>All Courses </a>
+                </mat-menu>
+                
+                <mat-menu #vertebrates="matMenu">
+                  <button mat-menu-item [matMenuTriggerFor]="fish">1</button>
+                  <button mat-menu-item [matMenuTriggerFor]="amphibians">2</button>
+                  <button mat-menu-item [matMenuTriggerFor]="reptiles">3</button>
+                  <button mat-menu-item>4</button>
+                  <button mat-menu-item>5</button>
+                </mat-menu>
+                
+                <mat-menu #invertebrates="matMenu">
+                  <button mat-menu-item>1</button>
+                  <button mat-menu-item>2</button>
+                  <button mat-menu-item>3</button>
+                  <button mat-menu-item>4</button>
+                  <button mat-menu-item>5</button>
+                  <button mat-menu-item>6</button>
+                  <button mat-menu-item>7</button>
+                </mat-menu>
+                
+                <mat-menu #fish="matMenu">
+                  <button mat-menu-item>1</button>
+                  <button mat-menu-item>2</button>
+                  <button mat-menu-item>3</button>
+                  <button mat-menu-item>4</button>
+                  <button mat-menu-item>5</button>
+                </mat-menu>
+                
+                <mat-menu #amphibians="matMenu">
+                  <button mat-menu-item>1</button>
+                  <button mat-menu-item>2</button>
+                  <button mat-menu-item>3</button>
+                  <button mat-menu-item>4</button>
+                </mat-menu>
+                
+                <mat-menu #reptiles="matMenu">
+                  <button mat-menu-item>1</button>
+                  <button mat-menu-item>2</button>
+                  <button mat-menu-item>3</button>
+                  <button mat-menu-item>4</button>
+                  <button mat-menu-item disabled>5</button>
+                </mat-menu>
+                
+                <!-- <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="font2"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  data-bs-title="Categories"
+                >
+                  Courses
+                </a> -->
+                <!-- <ul class="dropdown-menu" aria-labelledby="coursesDropdown">
+                  <li class="dropdown-submenu">
+                    <a
+                      id="font2"
+                      class="dropdown-item dropdown-toggle"
+                      href="mern.html"
+                      data-bs-toggle="tooltip"
+                      data-bs-title="Learn about MERN stack"
+                      >All Courses</a
+                    >
+                    <ul class="dropdown-menu" aria-labelledby="coursesDropdown">
+                      <li class="dropdown-submenu">
+                        <a
+                          class="dropdown-item"
+                          href="mongodb.html"
+                          data-bs-toggle="tooltip"
+                          data-bs-title="Learn MongoDB"
+                          ><i class="fa-solid fa-database"></i>Popular
+                          Courses</a
+                        >
+                        <a
+                          class="dropdown-item"
+                          href="expressjs.html"
+                          data-bs-toggle="tooltip"
+                          data-bs-title="Learn Express.js"
+                          ><i class="fa-brands fa-js"></i>New Courses</a
+                        >
+                        <a
+                          class="dropdown-item"
+                          href="react.html"
+                          data-bs-toggle="tooltip"
+                          data-bs-title="Learn React.js"
+                          ><i class="fa-brands fa-react"></i>Demo</a
+                        >
+                        <a
+                          class="dropdown-item"
+                          href="nodejs.html"
+                          data-bs-toggle="tooltip"
+                          data-bs-title="Learn Node.js"
+                          ><i class="fa-brands fa-node"></i>Node-JS</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="dropdown-submenu">
+                    <a
+                      id="font2"
+                      class="dropdown-item dropdown-toggle"
+                      href="mean.html"
+                      data-bs-toggle="tooltip"
+                      data-bs-title="Learn about MEAN stack"
+                      >New Courses</a
+                    >
+                    <ul class="dropdown-menu">
+                      <a
+                        id="font2"
+                        class="dropdown-item"
+                        href="mongodb.html"
+                        data-bs-toggle="tooltip"
+                        data-bs-title="Learn MongoDB"
+                        ><i class="fa-solid fa-database"></i>MongoDb</a
+                      >
+                      <a
+                        id="font2"
+                        class="dropdown-item"
+                        href="expressjs.html"
+                        data-bs-toggle="tooltip"
+                        data-bs-title="Learn Express.js"
+                        ><i class="fa-brands fa-js"></i>Express-JS</a
+                      >
+                      <a
+                        id="font2"
+                        class="dropdown-item"
+                        href="angular.html"
+                        data-bs-toggle="tooltip"
+                        data-bs-title="Learn Angular.js"
+                        ><i class="fa-brands fa-angular"></i>Angular-JS</a
+                      >
+                      <a
+                        id="font2"
+                        class="dropdown-item"
+                        href="nodejs.html"
+                        data-bs-toggle="tooltip"
+                        data-bs-title="Learn Node.js"
+                        ><i class="fa-brands fa-node"></i>Node JS</a
+                      >
+                    </ul>
+                  </li>
+                  <li>
+                    <a
+                      id="font2"
+                      class="dropdown-item"
+                     routerLink="genAi"
+                      data-bs-toggle="tooltip"
+                      data-bs-title="Learn about GenAI"
+                      >Popular Courses</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      id="font2"
+                      class="dropdown-item"
+                      href="devops.html"
+                      data-bs-toggle="tooltip"
+                      data-bs-title="Learn about DevOps"
+                      >Demo Courses</a
+                    >
+                  </li>
+                </ul> -->
+              </li>
+
+              <li class="nav-item">
+                <a
+                  id="font2"
+                  class="nav-link mx-4"
+                  routerLink="about"
+                  data-bs-toggle="tooltip"
+                  data-bs-title="Register Now"
+                  >About Us</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  id="font2"
+                  class="nav-link mx-4"
+                  routerLink="contactus"
+                  data-bs-toggle="tooltip"
+                  data-bs-title="Register Now"
+                  >Contact Us</a
+                >
+              </li>
+
+              <li class="nav-item">
+                <a
+                  id="font2"
+                  class="nav-link mx-4"
+                 routerLink="faqs"
+                  data-bs-toggle="tooltip"
+                  data-bs-title="Get in Touch"
+                  >FAQs</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  id="font2"
+                  class="nav-link mx-4"
+                 routerLink="forums"
+                  data-bs-toggle="tooltip"
+                  data-bs-title="Get in Touch"
+                  >Forums</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  id="font2"
+                  class="nav-link mx-4"
+                 routerLink="blogs"
+                  data-bs-toggle="tooltip"
+                  data-bs-title="Get in Touch"
+                  >Blogs</a
+                >
+            
+            <li class="nav-item">
+              <a
+                id="signin-link"
+                class="nav-link mx-4 "
+               routerLink="login"
+                data-bs-toggle="tooltip" data-bs-title="Log In"
+              >
+                Log In
+              </a>
+            </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </body>
+</html>

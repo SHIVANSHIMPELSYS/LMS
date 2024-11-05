@@ -1,0 +1,96 @@
+
+
+#font1{
+    font-family: "Cinzel", serif; 
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style:normal;
+    color: rgb(255, 115, 0);
+    border-radius: 10px;
+    font-size: x-large;
+    margin-top: 5%;
+
+  } 
+  #font2{
+        font-family: "Prociono", serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size:large;
+        color:rgba(12, 46, 66, 0.849);
+        padding-bottom: 5%;
+      
+    
+  }
+  #signin-link{
+ 
+   color: rgb(23, 160, 240);
+   font-family: "Prociono", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size:large;
+  }
+ 
+
+
+ 
+
+
+
+  #font2:hover{
+    text-decoration: underline;
+    color: rgb(255, 115, 0);
+  }
+  .dropdown-submenu {
+    position: relative;
+  }
+  
+  .dropdown-submenu:hover .dropdown-menu {
+    display: block;
+  }
+  
+  .dropdown-menu {
+    display: none;
+    position: absolute;
+    left: 100%;
+    top: 0;
+    margin-top: 0;
+  }
+  
+  .dropdown-menu.show {
+    display: block;
+  }
+  .navbar-nav{
+    margin-left: 5%;
+    
+  }
+  .navbar-expand-sm .navbar-nav {
+    flex-direction: row;
+    margin-left: 5%;
+}
+
+@media (max-width: 576px) {
+  .navbar-expand-sm .navbar-nav {
+    display: block;
+      flex-direction: row;
+      margin-left: 0%;
+  }
+}
+#nav-submenu{
+  text-decoration: none;
+  border: 0cap;
+  background-color: rgb(255, 255, 255);
+  color:rgba(12, 46, 66, 0.849);
+  font-family: "Prociono", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size:large;
+  color:rgba(12, 46, 66, 0.849);
+  padding-bottom: 5%;
+  margin-top: 9%;
+
+}
+#nav-submenu:hover{
+  text-decoration: underline;
+  color: rgb(255, 115, 0);
+ 
+}

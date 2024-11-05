@@ -1,0 +1,371 @@
+<!-- <div class="container">
+  <h2>{{ title }}!!</h2>
+  <form [formGroup]="angForm" novalidate>
+    <div class="form-group">
+      <label>Name:</label>
+      <input class="form-control" formControlName="name" type="text" />
+    </div>
+    <div
+      *ngIf="
+        angForm.controls['name'].invalid &&
+        (angForm.controls['name'].dirty || angForm.controls['name'].touched)
+      "
+      class="alert alert-danger"
+    >
+      <div *ngIf="angForm.controls['name'].errors">Name is required.</div>
+    </div>
+    <div class="form-group">
+      <label>Address:</label>
+      <input class="form-control" formControlName="address" type="text" />
+    </div>
+    <div
+      *ngIf="
+        angForm.controls['address'].invalid &&
+        (angForm.controls['address'].dirty ||
+          angForm.controls['address'].touched)
+      "
+      class="alert alert-danger"
+    >
+      <div *ngIf="angForm.controls['address'].errors">Address is required.</div>
+    </div>
+    <button
+      type="submit"
+      [disabled]="angForm.pristine || angForm.invalid"
+      class="btn btn-success"
+    >
+      Save
+    </button>
+  </form>
+  <br />
+  <p>Form value: {{ angForm.value | json }}</p>
+  <p>Form status: {{ angForm.status | json }}</p>
+</div> -->
+
+<!-- <div class="container">
+  <form [formGroup]="evaluationForm" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="name">Name:</label>
+      <input id="name" formControlName="name" type="text" class="form-control" />
+      <div *ngIf="evaluationForm.controls['name'].invalid && (evaluationForm.controls['name'].dirty || evaluationForm.controls['name'].touched)" class="alert alert-danger">
+        Name is required.
+      </div>
+    </div>
+
+    <div class="form-row">
+      <div class="form-group col-md-3">
+        <label for="dsa">DSA:</label>
+        <input id="dsa" formControlName="dsa" type="number" class="form-control" />
+        <div *ngIf="evaluationForm.controls['dsa'].invalid && (evaluationForm.controls['dsa'].dirty || evaluationForm.controls['dsa'].touched)" class="alert alert-danger">
+          DSA marks are required.
+        </div>
+      </div>
+      <div class="form-group col-md-3">
+        <label for="technicalRound">Technical Round:</label>
+        <input id="technicalRound" formControlName="technicalRound" type="number" class="form-control" />
+        <div *ngIf="evaluationForm.controls['technicalRound'].invalid && (evaluationForm.controls['technicalRound'].dirty || evaluationForm.controls['technicalRound'].touched)" class="alert alert-danger">
+          Technical Round marks are required.
+        </div>
+      </div>
+      <div class="form-group col-md-3">
+        <label for="hrRound">HR Round:</label>
+        <input id="hrRound" formControlName="hrRound" type="number" class="form-control" />
+        <div *ngIf="evaluationForm.controls['hrRound'].invalid && (evaluationForm.controls['hrRound'].dirty || evaluationForm.controls['hrRound'].touched)" class="alert alert-danger">
+          HR Round marks are required.
+        </div>
+      </div>
+      <div class="form-group col-md-3">
+        <label for="projectSection">Project Section:</label>
+        <input id="projectSection" formControlName="projectSection" type="number" class="form-control" />
+        <div *ngIf="evaluationForm.controls['projectSection'].invalid && (evaluationForm.controls['projectSection'].dirty || evaluationForm.controls['projectSection'].touched)" class="alert alert-danger">
+          Project Section marks are required.
+        </div>
+      </div>
+
+    </div>
+
+    <button type="submit" class="btn btn-success mt-3" [disabled]="evaluationForm.invalid">Submit</button>
+  </form>
+</div> -->
+
+<!-- <div class="container">
+  <form [formGroup]="evaluationForm" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="name">Name:</label>
+      <input id="name" formControlName="name" type="text" class="form-control" />
+      <div *ngIf="evaluationForm.controls['name'].invalid && (evaluationForm.controls['name'].dirty || evaluationForm.controls['name'].touched)" class="alert alert-danger">
+        Name is required.
+      </div>
+    </div>
+
+    <div class="form-row">
+      <div class="form-group col-md-3">
+        <label for="dsa">DSA:</label>
+        <input id="dsa" formControlName="dsa" type="number" class="form-control" />
+        <div *ngIf="evaluationForm.controls['dsa'].invalid && (evaluationForm.controls['dsa'].dirty || evaluationForm.controls['dsa'].touched)" class="alert alert-danger">
+          DSA marks are required.
+        </div>
+      </div>
+      <div class="form-group col-md-3">
+        <label for="technicalRound">Technical Round:</label>
+        <input id="technicalRound" formControlName="technicalRound" type="number" class="form-control" />
+        <div *ngIf="evaluationForm.controls['technicalRound'].invalid && (evaluationForm.controls['technicalRound'].dirty || evaluationForm.controls['technicalRound'].touched)" class="alert alert-danger">
+          Technical Round marks are required.
+        </div>
+      </div>
+      <div class="form-group col-md-3">
+        <label for="hrRound">HR Round:</label>
+        <input id="hrRound" formControlName="hrRound" type="number" class="form-control" />
+        <div *ngIf="evaluationForm.controls['hrRound'].invalid && (evaluationForm.controls['hrRound'].dirty || evaluationForm.controls['hrRound'].touched)" class="alert alert-danger">
+          HR Round marks are required.
+        </div>
+      </div>
+      <div class="form-group col-md-3">
+        <label for="projectSection">Project Section:</label>
+        <input id="projectSection" formControlName="projectSection" type="number" class="form-control" />
+        <div *ngIf="evaluationForm.controls['projectSection'].invalid && (evaluationForm.controls['projectSection'].dirty || evaluationForm.controls['projectSection'].touched)" class="alert alert-danger">
+          Project Section marks are required.
+        </div>
+      </div>
+
+      <div class="form-group col-md-3">
+        <label for="salary">Salary:</label>
+        <input id="salary" formControlName="salary" type="number" class="form-control" />
+        <div *ngIf="evaluationForm.controls['salary'].invalid && (evaluationForm.controls['salary'].dirty || evaluationForm.controls['salary'].touched)" class="alert alert-danger">
+          Salary is required.
+        </div>
+      </div>
+    </div>
+
+    <button type="submit" class="btn btn-success mt-3" [disabled]="evaluationForm.invalid">Submit</button>
+  </form>
+</div> -->
+
+<!-- <div class="container">
+  <form [formGroup]="evaluationForm" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="name">Name:</label>
+      <input
+        id="name"
+        placeholder="Name"
+        formControlName="name"
+        type="text"
+        class="form-control"
+      />
+      <div
+        *ngIf="
+          evaluationForm.controls['name'].invalid &&
+          (evaluationForm.controls['name'].dirty ||
+            evaluationForm.controls['name'].touched)
+        "
+        class="alert alert-danger"
+      >
+        Name is required.
+      </div>
+    </div>
+
+    <div class="form-row">
+      <div class="form-group col-md-3">
+        <label for="dsa">DSA:</label>
+        <input
+          id="dsa"
+          placeholder="DSA"
+          formControlName="dsa"
+          type="number"
+          class="form-control"
+        />
+        <div
+          *ngIf="
+            evaluationForm.controls['dsa'].invalid &&
+            (evaluationForm.controls['dsa'].dirty ||
+              evaluationForm.controls['dsa'].touched)
+          "
+          class="alert alert-danger"
+        >
+          DSA marks are required.
+        </div>
+      </div>
+      <div class="form-group col-md-3">
+        <label for="technicalRound">Technical Round:</label>
+        <input
+          id="technicalRound"
+          placeholder="Marks"
+          formControlName="technicalRound"
+          type="number"
+          class="form-control"
+        />
+        <div
+          *ngIf="
+            evaluationForm.controls['technicalRound'].invalid &&
+            (evaluationForm.controls['technicalRound'].dirty ||
+              evaluationForm.controls['technicalRound'].touched)
+          "
+          class="alert alert-danger"
+        >
+          Technical Round marks are required.
+        </div>
+      </div>
+      <div class="form-group col-md-3">
+        <label for="hrRound">HR Round:</label>
+        <input
+          id="hrRound" placeholder="Marks"
+          formControlName="hrRound"
+          type="number"
+          class="form-control"
+        />
+        <div
+          *ngIf="
+            evaluationForm.controls['hrRound'].invalid &&
+            (evaluationForm.controls['hrRound'].dirty ||
+              evaluationForm.controls['hrRound'].touched)
+          "
+          class="alert alert-danger"
+        >
+          HR Round marks are required.
+        </div>
+      </div>
+      <div class="form-group col-md-3">
+        <label for="projectSection">Project Section:</label>
+        <input
+          id="projectSection" placeholder="Marks"
+          formControlName="projectSection"
+          type="number"
+          class="form-control"
+        />
+        <div
+          *ngIf="
+            evaluationForm.controls['projectSection'].invalid &&
+            (evaluationForm.controls['projectSection'].dirty ||
+              evaluationForm.controls['projectSection'].touched)
+          "
+          class="alert alert-danger"
+        >
+          Project Section marks are required.
+        </div>
+      </div>
+      <div class="form-group col-md-3">
+        <label for="salary">Salary:</label>
+        <input
+          id="salary" placeholder="Marks"
+          formControlName="salary"
+          type="number"
+          class="form-control"
+        />
+        <div
+          *ngIf="
+            evaluationForm.controls['salary'].invalid &&
+            (evaluationForm.controls['salary'].dirty ||
+              evaluationForm.controls['salary'].touched)
+          "
+          class="alert alert-danger"
+        >
+          Salary is required.
+        </div>
+      </div>
+      <div class="form-group col-md-3">
+        <label for="bonus">Bonus:</label>
+        <input
+          id="bonus"
+          formControlName="bonus"
+          type="number"
+          class="form-control"
+          [value]="bonus"
+          readonly
+        />
+      </div>
+      <div class="form-group col-md-3">
+        <label for="totalSalary">Total Salary:</label>
+        <input
+          id="totalSalary" 
+          formControlName="totalSalary"
+          type="number"
+          class="form-control"
+          [value]="totalSalary"
+          readonly
+        />
+      </div>
+    </div>
+
+    <button
+      type="submit"
+      class="btn btn-success mt-3"
+      [disabled]="evaluationForm.invalid"
+    >
+      Submit
+    </button>
+  </form>
+</div> -->
+<div class="container">
+  <h3 id="centre">Contact Us:</h3>
+
+  <form [formGroup]="evaluationForm" (ngSubmit)="onSubmit()">
+    <!-- Name and Email in the same line -->
+    <div class="row">
+      <div class="col-sm-6">
+        <label id="text-style" for="name">Name:</label>
+        <input id="name" placeholder="Name" formControlName="name" type="text" class="form-control" />
+        <div *ngIf="evaluationForm.controls['name'].invalid && (evaluationForm.controls['name'].dirty || evaluationForm.controls['name'].touched)" class="alert alert-danger">
+          Name is required.
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <label id="text-style" for="email">Email:</label>
+        <input id="email" placeholder="Email" formControlName="email" type="email" class="form-control" />
+        <div *ngIf="evaluationForm.controls['email'].invalid && (evaluationForm.controls['email'].dirty || evaluationForm.controls['email'].touched)" class="alert alert-danger">
+          Email is required.
+        </div>
+      </div>
+    </div>
+<br>
+    <!-- Mobile and Course Name in the same line -->
+    <div class="row">
+      <div class="col-md-6">
+        <label id="text-style" for="mobile">Mobile:</label>
+        <input id="mobile" placeholder="Mobile" formControlName="mobile" type="text" class="form-control" />
+        <div *ngIf="evaluationForm.controls['mobile'].invalid && (evaluationForm.controls['mobile'].dirty || evaluationForm.controls['mobile'].touched)" class="alert alert-danger">
+          Mobile number is required.
+        </div>
+      </div>
+      <div class="col-md-6">
+        <label id="text-style" for="course">Course Name:</label>
+        <input id="course" placeholder="Course Name" formControlName="course" type="text" class="form-control" />
+        <div *ngIf="evaluationForm.controls['course'].invalid && (evaluationForm.controls['course'].dirty || evaluationForm.controls['course'].touched)" class="alert alert-danger">
+          Course name is required.
+        </div>
+      </div>
+    </div>
+<br>
+    <!-- Select box for "What are you looking for?" -->
+    <div class="form-group">
+      <label id="text-style" for="lookingFor">What are you looking for?</label>
+      <select id="lookingFor" formControlName="lookingFor" class="form-control">
+        <option value="">Select an option</option>
+        <option value="course">Get a Course</option>
+        <option value="instructor">Instructor details</option>
+        <option value="pricing">Pricing issue</option>
+        <option value="executive">Connect to our executive</option>
+        <option value="alumni">Connect with an alumni</option>
+      </select>
+      <div *ngIf="evaluationForm.controls['lookingFor'].invalid && (evaluationForm.controls['lookingFor'].dirty || evaluationForm.controls['lookingFor'].touched)" class="alert alert-danger">
+        This field is required.
+      </div>
+    </div>
+<br>
+    <!-- Text area for additional details -->
+    <div class="form-group">
+      <label id="text-style" for="additionalDetails">Any additional details:</label>
+      <textarea id="additionalDetails" placeholder="Additional details" formControlName="additionalDetails" class="form-control" rows="3"></textarea>
+    </div>
+
+    <!-- Checkbox for terms and conditions -->
+    <div class="form-group form-check">
+      <input type="checkbox" class="form-check-input" id="terms" formControlName="terms" />
+      <label id="text-style" class="form-check-label" for="terms">Accept terms and conditions</label>
+      <div *ngIf="evaluationForm.controls['terms'].invalid && (evaluationForm.controls['terms'].dirty || evaluationForm.controls['terms'].touched)" class="alert alert-danger">
+        You must accept the terms and conditions.
+      </div>
+    </div>
+<br>
+    <!-- Submit button -->
+    <button type="submit" class="btn btn-success mt-3" [disabled]="evaluationForm.invalid">Submit</button>
+  </form>
+</div>

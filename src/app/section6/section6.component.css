@@ -1,0 +1,50 @@
+.container {
+    width: 100%;
+    box-shadow: 1px 1px 20px 1px rgba(2, 33, 78, 0.192);
+  }
+  
+  #content {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+  }
+  
+  
+  
+  .read-more {
+    color: blue;
+    cursor: pointer;
+    text-decoration: underline;
+  }
+  #img3{
+    width: 80%;
+    margin-left: 15%;
+    /* border-radius: 300px; */
+  }
+  #section-heading {
+    color:   rgb(255, 115, 0);
+     margin-top: 2%;
+     font-family: "Platypi", serif;
+     font-optical-sizing: auto;
+     font-weight: 600;
+   margin-bottom: 10%;
+     font-style: normal;
+     font-size: xx-large;
+  
+   }
+   #section-content{
+       font-family: "Times New Roman", Times, serif;
+       margin-bottom: 0.5%;
+       color: rgb(22, 67, 68);
+       font-size: x-large;
+       margin-bottom: 2%;
+  
+   }
+   #div-img{
+    /* background-color:   rgba(255, 115, 0, 0.856); */
+    border-top-left-radius: 130px;
+    border-bottom-left-radius: 130px;
+    /* border-top-right-radius: 730px; */
+    /* border-bottom-right-radius: 730px; */
+    
+   }

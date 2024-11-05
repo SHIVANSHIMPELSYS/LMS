@@ -1,0 +1,100 @@
+.container {
+  margin-top: 20px;
+}
+
+.card {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.card-subtitle {
+  font-size: 0.9rem;
+  color: #777;
+}
+
+.card-text {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+  border-color: #0056b3;
+}
+
+.pagination {
+  margin-top: 20px;
+}
+
+.page-item .page-link {
+  color: #007bff;
+  padding: 10px 15px;
+  border: 1px solid #007bff;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.page-item .page-link:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+.page-item.active .page-link {
+  background-color: #007bff;
+  color: white;
+  border-color: #007bff;
+}
+
+.page-item.disabled .page-link {
+  color: #ccc;
+  border-color: #ccc;
+}
+#section-heading {
+  color: rgb(22, 67, 68);
+  margin-top: 2%;
+  font-family: "Platypi", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-size: xx-large;
+  font-style: normal;
+  display: flex;
+
+  background-color: #abcef31f;
+  padding: 1%;
+}
+.card-title {
+  font-family: "Times New Roman", Times, serif;
+  margin-bottom: 0.5%;
+  color: rgb(22, 67, 68);
+  font-size: x-large;
+  margin-bottom: 5%;
+}
+.card-text {
+  font-family: "Times New Roman", Times, serif;
+  margin-bottom: 0.5%;
+  color: rgb(22, 67, 68);
+  font-size: x-large;
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+.card-body {
+  /* padding: 2%; */
+}
