@@ -1,107 +1,18 @@
-<hr>
-<div class="container">
-  <div class="row">
-    <div id="first-half" class="col-sm-6">
-      <br><br>
-      <h1 id="montaga-regular">Sign Up</h1>
-      <br><br>
-      <div class="row">
-        <form #f="ngForm" novalidate (ngSubmit)="onSubmit(f)">
-          <!-- First Name -->
-          <div class="col-sm-6">
-            <label id="montaga-regular1" for="firstName">First Name:</label>
-            <input id="montaga-regular1"
-              type="text"
-              name="firstName"
-              [(ngModel)]="user.firstName"
-              #firstName="ngModel"
-              required
-              class="form-control"
-            />
-            <small [hidden]="firstName.valid || (firstName.pristine && !f.submitted)">First Name is required.</small>
-          </div>
-  
-          <!-- Last Name -->
-          <div class="col-sm-6">
-            <label id="montaga-regular1"  for="lastName">Last Name:</label>
-            <input id="montaga-regular1"
-              type="text"
-              name="lastName"
-              [(ngModel)]="user.lastName"
-              #lastName="ngModel"
-              required
-              class="form-control"
-            />
-            <small [hidden]="lastName.valid || (lastName.pristine && !f.submitted)">Last Name is required.</small>
-          </div>
-        </div>
+<br><br><br>
+<h1 id="section-heading">Get In Touch!</h1>
+<br>
+<h4 id="section-content">Have any doubt? We would love to assist you!</h4>
+<br>    
 
-        <!-- Email -->
-        <div class="form-group">
-          <label id="montaga-regular1" for="email">Email:</label>
-          <input id="montaga-regular1"
-            type="email"
-            name="email"
-            [(ngModel)]="user.email"
-            #email="ngModel"
-            required
-            class="form-control"
-          />
-          <small [hidden]="email.valid || (email.pristine && !f.submitted)">Email is required and must be valid.</small>
-        </div>
-
-        <!-- Gender -->
-        <div class="form-group">
-          <label id="montaga-regular1">Gender:</label>
-          <div>
-            <label class="radio-inline">
-              <input type="radio" name="gender" value="male" [(ngModel)]="user.gender" required> Male
-            </label>
-            <label class="radio-inline">
-              <input type="radio" name="gender" value="female" [(ngModel)]="user.gender" required> Female
-            </label>
-            <label class="radio-inline">
-              <input type="radio" name="gender" value="other" [(ngModel)]="user.gender" required> Other
-            </label>
-          </div>
-        </div>
-
-        <!-- Password -->
-        <div class="form-group">
-          <label id="montaga-regular1"  for="password">Create Password:</label>
-          <input id="montaga-regular1"
-            type="password"
-            name="password"
-            [(ngModel)]="user.password"
-            #password="ngModel"
-            required
-            minlength="8"
-            class="form-control"
-          />
-          <small [hidden]="password.valid || (password.pristine && !f.submitted)">Password is required (minimum 8 characters).</small>
-        </div>
-
-        <!-- Terms and Conditions -->
-        <div class="form-group form-check">
-          <input type="checkbox" class="form-check-input" id="terms" name="terms" [(ngModel)]="user.terms" required>
-          <label class="form-check-label" for="terms">Click here to accept terms and conditions</label>
-          <small [hidden]="terms.valid || (terms.pristine && !f.submitted)">You must accept the terms and conditions.</small>
-        </div>
-
-        <!-- Sign-Up Button -->
-        <button class="btn btn-success" type="submit" [disabled]="f.invalid">
-          Sign Up
-        </button>
-      </form>
-    </div>
-    <div id="second-half" class="col-sm-6">
-      <h2 id="section-heading">
-        Join SkillWave: Unlock Your Path to Excellence!
-      </h2>
-      <h4 id="section-content">
-        SkillWave is dedicated to empowering individuals and organizations with top-tier educational resources and training programs. Sign up today to start your journey towards mastering today’s essential skills and transforming your career!
-      </h4>
-      <img [src]="imagePath" alt="Contact Image">
-    </div>
-  </div>
+<img src="assets/contactImg.png" alt="" />
+<div id="section-data">
+  <h3 id="section-heading">Contact Details</h3>
+  <h5 id="section-content">
+    <i class="fa-regular fa-address-book"></i> Address:Impelsys Private Limited,
+    IWF Campus, Tower A, Survey.No.192, Whitefield Main Rd, Mahadevapura,
+    Bengaluru- 560016. India.
+  </h5>
+  <h5 id="section-content"><i class="fa-solid fa-phone"></i>Phone No:9876543210</h5>
+  <h5 id="section-content"><i class="fa-regular fa-envelope"></i>Email:qwertyuiopgmail.com</h5>
 </div>
+
